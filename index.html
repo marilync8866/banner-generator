@@ -1,16 +1,49 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>index.html</title>
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        $(function(){
-            $("h1").fadeOut(2000);
-        });
-    </script>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>html() and val() Madlib</title>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    $(function() {
+
+      $('button').click(function() {
+        var season = $('#season').val(); // maybe their birthmonth
+        var flavor = $('#flavor').val();
+        var name = $('#name').val();
+        var color = $('#color').val();
+
+        var story = $('input').val();
+        $('p').html(
+//There was a (girl/boy) named (input) their favorite season is (s/w/f/sp) and they like (c/s/b/e) ice cream
+        );
+
+
+        $('body').css('background-color', color);
+
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  Season:
+  <input id="season"> // Change to birth month
+  <br> Ice cream flavor:
+  <input id="flavor">
+  <br> Name:
+  <input id="name">
+  <br>Color:
+  <input id="color">
+
+  <button>Generate Madlib!</button>
+
+  <p></p>
+
+</body>
+
 </html>
