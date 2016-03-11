@@ -17,14 +17,15 @@
         var flavor = $('#flavor').val();
         var name = $('#name').val();
         var color = $('#color').val();
+        var color1 = $('#color1').val();
 
 
         var story = $('input').val();
-        $('p').html("Hey  " + name + " I hope you get lots of " + flavor + " cake on your birthday in " + month + "!");
+        $('p').html("Hey  " + name + " I hope you get lots of " + flavor + " cake on your birthday in " + month + "!"); // this is the madd libb
 
 
-        $('body').css('background-color', color);
-
+        $('p').css('background-color', color);//changes background color baseds on user input
+$('body').css('background-color', color1);
       });
 
     });
@@ -50,13 +51,16 @@
   <h5>Color:</h5>
 
   <input id="color">
+  <h5> Second color:</h5>
+
+  <input id="color1">
   <br>
   <br>
 
   <button>Surprise!</button>
-
+<div>
   <p></p>
-
+</div>
 </body>
 
 </html>
